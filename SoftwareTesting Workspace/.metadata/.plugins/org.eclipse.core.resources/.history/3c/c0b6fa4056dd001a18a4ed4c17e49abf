@@ -1,0 +1,17 @@
+package mocktest;
+
+import java.util.List;
+
+import org.junit.Test;
+import static org.mockito.Mockito.*;
+
+public class MyTest {
+	
+	@Test
+	public void verify_behaviour() {
+		List mockedList = mock(List.class);
+		
+		mockedList.add("one");
+		mockedList.clear();
+	}
+}

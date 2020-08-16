@@ -1,0 +1,13 @@
+package mocktest;
+
+import java.util.List;
+
+import org.mockito.Mock;
+
+public class MockObject {
+
+	@Test
+	public void createMockObject() {
+		List mockedList = mock()
+	}
+}

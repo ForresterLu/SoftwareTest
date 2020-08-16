@@ -1,0 +1,24 @@
+package mocktest
+import java.util.List;
+
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
+import org.testng.annotations.Test;
+
+@RunWith(MockitoJUnitRunner.class)
+public class MyTest {
+    @Mock
+    private List mockList;
+
+    @Test
+    public void verify_behaviours() {
+        //using mock object
+        mockList.add("one");
+        mockList.clear();
+        
+        //验证行为是否发生
+        verify(mockList).add("one");
+        verify(mockList).clear();
+    }
+}

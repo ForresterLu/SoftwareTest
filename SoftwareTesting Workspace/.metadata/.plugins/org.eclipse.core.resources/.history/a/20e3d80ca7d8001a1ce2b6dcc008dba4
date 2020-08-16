@@ -1,0 +1,36 @@
+package junittest;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import automorphiccount.SysConvert;
+
+class SysConvertTest {
+
+	@Test
+	void testcaculateMupli1() {
+		System.out.println("@Test caculateMupli_1");
+		assertEquals(SysConvert.caculateMupli(0), 1);
+	}
+	
+	@Test
+	void testcaculateMupli2() {
+		System.out.println("@Test caculateMupli_2");
+		assertEquals(SysConvert.caculateMupli(3), 4096);
+	}
+	
+	@Test
+	void testcaculateMupli3() {
+		System.out.println("@Test caculateMupli_3");
+		assertEquals(SysConvert.caculateMupli(6), 16777216);
+	}
+	
+	@Test
+	void testconvertHexadecimalToDecimalism1() {
+		System.out.println("@Test convertHexadecimalToDecimalism_1");
+		SysConvert sysConvert = new SysConvert();
+		assertEquals(sysConvert.convertHexadecimalToDecimalism("0xA"), 10);
+	}
+
+}

@@ -1,0 +1,12 @@
+package junit;
+
+import static org.junit.Assert.*;
+
+
+class Test {
+
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

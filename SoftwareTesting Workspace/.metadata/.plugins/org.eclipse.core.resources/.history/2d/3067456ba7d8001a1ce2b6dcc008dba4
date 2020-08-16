@@ -1,0 +1,14 @@
+package junittest;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CountAutomorphicNumberTest {
+
+	@Test
+	void testcountAutomorphicNumber1() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,88 @@
+package junittest;
+
+//import static org.junit.Assert.assertTrue;
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+
+//import org.junit.jupiter.api.Test;
+
+import automorphiccount.AutomorphicNumber;
+import junit.framework.TestCase;
+
+
+import org.junit.Test;
+
+class AutomorphicNumberTest extends TestCase{
+
+	@Test
+	public void testsqar1() {
+		assertTrue(AutomorphicNumber.sqar(0) == 1);
+	}
+	
+	@Test
+	public void testsqar2() {
+		assertTrue(AutomorphicNumber.sqar(2) == 100);
+	}
+	
+	@Test
+	public void testCalcWeishu1() {
+		assertTrue(AutomorphicNumber.calcWeishu(0) == 1);
+	}
+
+	
+	@Test
+	public void testCalcWeishu2() {
+		assertTrue(AutomorphicNumber.calcWeishu(10) == 2);
+	}
+	
+	@Test
+	public void testCalcWeishu3() {
+		assertTrue(AutomorphicNumber.calcWeishu(101) == 3);
+	}
+	
+	@Test
+	public void testcalcAutomorphicNumbers1() {
+		System.out.println("@Test AutomorphicNumbers_1");
+		System.out.println("Input: " + 2000 + "; Expected output: " + 8);
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertEquals(automorphicNumber.calcAutomorphicNumbers(2000), 8);
+	}
+	
+	
+	@Test
+	public void testcalcAutomorphicNumbers2() {
+		System.out.println("@Test AutomorphicNumbers_2");
+		System.out.println("Input: " + 500 + "; Expected output: " + 7);
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertEquals(automorphicNumber.calcAutomorphicNumbers(500), 7);
+	}
+	
+	@Test
+	public void testcalcAutomorphicNumbers3() {
+		System.out.println("@Test AutomorphicNumbers_3");
+		System.out.println("Input: " + 10000 + "; Expected output: " + 9);
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertEquals(automorphicNumber.calcAutomorphicNumbers(10000), 9);
+	}
+	
+	@Test
+	public void testisAutomorphicNumbers1() {
+		System.out.println("@Test isAutomorphicNumbers_1");
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertTrue(automorphicNumber.isAutomorphicNumbers(25));
+	}
+	
+	@Test
+	public void testisAutomorphicNumbers2() {
+		System.out.println("@Test isAutomorphicNumbers_2");
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertFalse(automorphicNumber.isAutomorphicNumbers(10));
+	}
+	
+	@Test
+	public void testisAutomorphicNumbers3() {
+		System.out.println("@Test isAutomorphicNumbers_3");
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertTrue(automorphicNumber.isAutomorphicNumbers(9376));
+	}
+
+}

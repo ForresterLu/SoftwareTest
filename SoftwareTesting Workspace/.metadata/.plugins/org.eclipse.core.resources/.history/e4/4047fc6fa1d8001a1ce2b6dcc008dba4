@@ -1,0 +1,54 @@
+package junittest;
+
+import java.util.Scanner;
+public class AutomorphicNumber{
+  
+  public static void main(String []args){
+      Scanner in = new Scanner(System.in);
+      while(in.hasNext()){
+          int n = in.nextInt();
+          int num = calcAutomorphicNumbers(n);
+          System.out.println(num);
+      }
+      in.close();
+  }
+  
+  
+  public int calcAutomorphicNumbers(int n){
+      int count = 0;
+      for(int i = 1; i <= n; i++){
+          int weishu = calcWeishu(i);
+          int sqar = i * i;
+          int temp = sqar;
+          int wei = 0;
+          for(int j = 0; j < weishu; j++){
+              wei = wei + (temp % 10) * sqar(j);
+              temp = temp / 10;
+          }
+          if(wei == i) count ++;
+      }
+      return count+1;
+  }
+  
+  public static int calcWeishu(int number){
+      int temp = number / 10;
+      int count = 1;
+      while(temp != 0){
+          number = temp;
+          temp = number / 10;
+          count ++;
+      }
+      return count;
+  }
+  
+  public static int sqar(int b){
+      int value = 1;
+      if(b == 0) return value;
+      else{
+          for(int i = 0; i < b; i++){
+              value = value * 10;
+          }
+      }
+      return value;
+  }
+}

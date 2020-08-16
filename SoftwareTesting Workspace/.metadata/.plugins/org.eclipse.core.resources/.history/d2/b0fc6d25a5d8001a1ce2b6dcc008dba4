@@ -1,0 +1,62 @@
+package junittest;
+
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import automorphiccount.AutomorphicNumber;
+
+class AutomorphicNumberTest {
+
+	@Test
+	void testsqar1() {
+		assertTrue(AutomorphicNumber.sqar(0) == 1);
+	}
+	
+	@Test
+	void testsqar2() {
+		assertTrue(AutomorphicNumber.sqar(2) == 100);
+	}
+	
+	@Test
+	void testCalcWeishu1() {
+		assertTrue(AutomorphicNumber.calcWeishu(0) == 1);
+	}
+
+	
+	@Test
+	void testCalcWeishu2() {
+		assertTrue(AutomorphicNumber.calcWeishu(10) == 2);
+	}
+	
+	@Test
+	void testCalcWeishu3() {
+		assertTrue(AutomorphicNumber.calcWeishu(101) == 3);
+	}
+	
+	@Test
+	void testcalcAutomorphicNumbers1() {
+		System.out.println("@Test AutomorphicNumbers");
+		System.out.println("Input: " + 2000 + "; Expected output: " + 8);
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertEquals(automorphicNumber.calcAutomorphicNumbers(2000), 8);
+	}
+	
+	
+	@Test
+	void testcalcAutomorphicNumbers2() {
+		System.out.println("@Test AutomorphicNumbers");
+		System.out.println("Input: " + 500 + "; Expected output: " + 7);
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertEquals(automorphicNumber.calcAutomorphicNumbers(500), 7);
+	}
+	
+	@Test
+	void testcalcAutomorphicNumbers3() {
+		System.out.println("@Test AutomorphicNumbers");
+		System.out.println("Input: " + 500 + "; Expected output: " + 7);
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertEquals(automorphicNumber.calcAutomorphicNumbers(500), 7);
+	}
+}

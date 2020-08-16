@@ -1,0 +1,12 @@
+package junittest;
+
+public class CountAutomorphicNumber {
+	
+	public int countAutomorphicNumber(String hexadecimal) {
+		SysConvert sysConvert = new SysConvert();
+		int decimalism = sysConvert.convertHexadecimalToDecimalism(hexadecimal);
+		int automorphicCount = 
+		return 
+
+	}
+}

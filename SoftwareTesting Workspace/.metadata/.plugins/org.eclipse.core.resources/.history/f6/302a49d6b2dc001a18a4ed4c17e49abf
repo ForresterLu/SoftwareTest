@@ -1,0 +1,21 @@
+package automorphiccount;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import junit.framework.Assert;
+
+public class TestAutomorphicNumber {
+	
+	@Test(dataProvider = "provideNumbers")
+	public void testcalcAutomorphicNumbers1(int number, int expected) {
+		AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+		assertEquals(automorphicNumber.calcAutomorphicNumbers(2000), 8);
+	}
+	
+	@DataProvider(name = "provideNumbers")
+	public Object[][] provideData() {
+		return new Object[][] {{10, 20}, {100, 110}, {200, 210}};
+	}
+
+}

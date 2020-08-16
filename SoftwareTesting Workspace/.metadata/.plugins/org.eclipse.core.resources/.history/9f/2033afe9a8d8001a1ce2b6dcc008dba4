@@ -1,0 +1,15 @@
+package junittest;
+
+import java.util.Vector;
+
+import junit.framework.Test;
+import junit.framework.TestSuite;
+import junittest.*;
+
+public class TestAll {
+
+	public static Test suite() {
+		TestSuite suite = new TestSuite("All JUnit Tests");
+		suite.addTest();
+	}
+}

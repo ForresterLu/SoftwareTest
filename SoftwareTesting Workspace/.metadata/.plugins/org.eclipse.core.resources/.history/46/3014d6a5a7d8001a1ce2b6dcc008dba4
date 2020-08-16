@@ -1,0 +1,17 @@
+package junittest;
+
+import static org.junit.jupiter.api.Assertions.*;
+import automorphiccount.CountAutomorphicNumber;
+
+import org.junit.jupiter.api.Test;
+
+class CountAutomorphicNumberTest {
+
+	@Test
+	void testcountAutomorphicNumber1() {
+		CountAutomorphicNumber countAutomorphicNumber = new CountAutomorphicNumber();
+		System.out.println(countAutomorphicNumber.countAutomorphicNumber("0xA"));
+		assertEquals(countAutomorphicNumber.countAutomorphicNumber("0xAB"), 6);
+	}
+
+}

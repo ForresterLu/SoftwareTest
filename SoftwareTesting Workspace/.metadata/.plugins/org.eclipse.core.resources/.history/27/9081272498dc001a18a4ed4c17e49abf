@@ -1,0 +1,54 @@
+package junittest;
+
+//import static org.junit.jupiter.api.Assertions.*;
+//import automorphiccount.CountAutomorphicNumber;
+import junit.framework.TestCase;
+
+import org.junit.jupiter.api.Test;
+
+import automorphiccount.CountAutomorphicNumber;
+
+class CountAutomorphicNumberTest extends TestCase{
+
+	@Test
+	public void testcountAutomorphicNumber1() {
+		System.out.println("@Test countAutomorphicNumber_1");
+		CountAutomorphicNumber countAutomorphicNumber = new CountAutomorphicNumber();
+		assertEquals(countAutomorphicNumber.countAutomorphicNumber("0xAB"), 6);
+	}
+	
+	@Test
+	public void testcountAutomorphicNumber2() {
+		System.out.println("@Test countAutomorphicNumber_2");
+		CountAutomorphicNumber countAutomorphicNumber = new CountAutomorphicNumber();
+		assertEquals(countAutomorphicNumber.countAutomorphicNumber("0xA"), 4);
+	}
+	
+	@Test
+	public void testcountAutomorphicNumber3() {
+		System.out.println("@Test countAutomorphicNumber_3");
+		CountAutomorphicNumber countAutomorphicNumber = new CountAutomorphicNumber();
+		assertEquals(countAutomorphicNumber.countAutomorphicNumber("0xAA998"), 9);
+	}
+	
+//	@Test
+//	public void testcountAutomorphicNumber4() {
+//		System.out.println("@Test countAutomorphicNumber_4");
+//		CountAutomorphicNumber countAutomorphicNumber = new CountAutomorphicNumber();
+//		assertEquals(countAutomorphicNumber.countAutomorphicNumber("0xADEFEEEE"), 9);
+//	}
+	
+	
+	@Test
+	public void testcountAutomorphicNumber5() {
+		System.out.println("@Test countAutomorphicNumber_5");
+		CountAutomorphicNumber countAutomorphicNumber = new CountAutomorphicNumber();
+		assertEquals(countAutomorphicNumber.countAutomorphicNumber("0x123456A"), 9);
+	}
+	
+//	@Test
+//	public void testcountAutomorphicNumber0() {
+//		assertTrue(false);
+//	}
+
+}

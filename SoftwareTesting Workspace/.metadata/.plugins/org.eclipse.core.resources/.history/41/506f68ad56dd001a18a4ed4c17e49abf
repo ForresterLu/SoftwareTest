@@ -1,0 +1,11 @@
+package mocktest;
+
+import org.junit.Test;
+
+public class MockitoTest {
+	
+	@Test(expected = RuntimeException.class)
+	public void when_thenReturn() {
+		
+	}
+}

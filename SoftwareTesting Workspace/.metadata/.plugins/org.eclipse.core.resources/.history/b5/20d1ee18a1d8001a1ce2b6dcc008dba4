@@ -1,0 +1,8 @@
+package junittest;
+
+public class CountAutomorphicNumber {
+	
+	public int countAutomorphicNumber() {
+		
+	}
+}

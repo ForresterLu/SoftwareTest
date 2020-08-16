@@ -1,0 +1,12 @@
+package junit;
+
+import static org.junit.Assert.*;
+
+
+class Test {
+	@org.junit.jupiter.api.Test
+	void test() {
+		assertTrue(true);
+	}
+
+}

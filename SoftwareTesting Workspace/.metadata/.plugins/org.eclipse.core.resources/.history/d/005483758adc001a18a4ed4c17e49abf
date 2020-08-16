@@ -1,0 +1,11 @@
+package com.softwaretesting;
+
+import org.testng.annotations.Test;
+
+public class TestParameterDataProvider {
+	
+	@Test(dataProvider = "providerNumbers")
+	public void test(int number, int expected) {
+		
+	}
+}

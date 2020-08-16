@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="TestAll" duration-ms="72" started-at="2020-08-12T07:49:06Z" finished-at="2020-08-12T07:49:07Z">
+    <groups>
+    </groups>
+    <test name="case1" duration-ms="36" started-at="2020-08-12T07:49:06Z" finished-at="2020-08-12T07:49:07Z">
+      <class name="com.yiibai.TestDBConnection">
+        <test-method status="PASS" signature="runOtherTest1()[pri:0, instance:com.yiibai.TestDBConnection@5d5eef3d]" name="runOtherTest1" duration-ms="4" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runOtherTest1 -->
+        <test-method status="PASS" signature="runOtherTest2()[pri:0, instance:com.yiibai.TestDBConnection@5d5eef3d]" name="runOtherTest2" duration-ms="0" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runOtherTest2 -->
+      </class> <!-- com.yiibai.TestDBConnection -->
+      <class name="com.yiibai.TestConfiguration">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.yiibai.TestConfiguration@56f4468b]" name="f" duration-ms="4" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.yiibai.TestConfiguration -->
+      <class name="com.yiibai.DBConfig">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.yiibai.DBConfig@32d992b2]" name="beforeSuite" is-config="true" duration-ms="12" started-at="2020-08-12T15:49:06Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.yiibai.DBConfig@32d992b2]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.yiibai.DBConfig@32d992b2]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.yiibai.DBConfig@32d992b2]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.yiibai.DBConfig -->
+    </test> <!-- case1 -->
+    <test name="case2" duration-ms="8" started-at="2020-08-12T07:49:07Z" finished-at="2020-08-12T07:49:07Z">
+      <class name="com.yiibai.TestDBConnection">
+        <test-method status="PASS" signature="runOtherTest1()[pri:0, instance:com.yiibai.TestDBConnection@675d3402]" name="runOtherTest1" duration-ms="0" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runOtherTest1 -->
+        <test-method status="PASS" signature="runOtherTest2()[pri:0, instance:com.yiibai.TestDBConnection@675d3402]" name="runOtherTest2" duration-ms="4" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runOtherTest2 -->
+      </class> <!-- com.yiibai.TestDBConnection -->
+      <class name="com.yiibai.DBConfig">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.yiibai.DBConfig@28feb3fa]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.yiibai.DBConfig@28feb3fa]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.yiibai.DBConfig@28feb3fa]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.yiibai.DBConfig@28feb3fa]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-08-12T15:49:07Z" finished-at="2020-08-12T15:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.yiibai.DBConfig -->
+    </test> <!-- case2 -->
+  </suite> <!-- TestAll -->
+</testng-results>

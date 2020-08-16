@@ -1,0 +1,76 @@
+package automorphiccount;
+/**
+ * 自守数是指一个数的平方的尾数等于该数自身的自然数。
+ * 例如：25^2 = 625，76^2 = 5776，9376^2 = 87909376。请求出n以内的自守数的个数
+ */
+import java.util.Scanner;
+public class AutomorphicNumber{
+  
+  public static void main(String []args){
+	  AutomorphicNumber automorphicNumber = new AutomorphicNumber();
+//      Scanner in = new Scanner(System.in);
+//      while(in.hasNext()){
+//          int n = in.nextInt();
+//          int num = automorphicNumber.calcAutomorphicNumbers(n);
+//          System.out.println(num);
+//      }
+//      in.close();
+	  
+	  System.out.println(automorphicNumber.isAutomorphicNumbers(25));
+  }
+  
+  
+  public int calcAutomorphicNumbers(long n){
+      int count = 0;
+      for(int i = 1; i <= n; i++){
+          int weishu = calcWeishu(i);
+          int sqar = i * i;
+          int temp = sqar;
+          int wei = 0;
+          for(int j = 0; j < weishu; j++){
+              wei = wei + (temp % 10) * sqar(j);
+              temp = temp / 10;
+          }
+          if(wei == i) count ++;
+      }
+      return count+1;
+  }
+  
+  public boolean isAutomorphicNumbers(int number){
+      boolean judge = false;
+	  int weishu = calcWeishu(number);
+      int sqar = number * number;
+      int temp = sqar;
+      int wei = 0;
+      for(int j = 0; j < weishu; j++){
+          wei = wei + (temp % 10) * sqar(j);
+          temp = temp / 10;
+      }
+      if(wei == number) judge = true;
+      
+      return judge;
+  }
+
+  
+  public static int calcWeishu(int number){
+      int temp = number / 10;
+      int count = 1;
+      while(temp != 0){
+          number = temp;
+          temp = number / 10;
+          count ++;
+      }
+      return count;
+  }
+  
+  public static int sqar(int b){
+      int value = 1;
+      if(b == 0) return value;
+      else{
+          for(int i = 0; i < b; i++){
+              value = value * 10;
+          }
+      }
+      return value;
+  }
+}

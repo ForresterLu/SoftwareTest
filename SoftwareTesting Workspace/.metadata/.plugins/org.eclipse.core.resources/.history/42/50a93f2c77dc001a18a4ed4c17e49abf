@@ -1,0 +1,28 @@
+package com.softwaretesting;
+
+import java.io.InputStream;
+import java.sql.Connection;
+import java.util.Properties;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class TestParameterXML {
+	Connection conn;
+	
+	@Test
+	@Parameters({"dbconfig", "poolsize"})
+	public void createConection(String dbconfig, int poolsize) {
+		System.out.println("dbconfig: " + dbconfig);
+		System.out.println("poolsize: " + poolsize);
+		
+		Properties pro = new Properties();
+		InputStream input = null;
+		
+		try {
+			String path = System.getProperty("user.dir") + "\\" + dbconfig;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

@@ -1,0 +1,9 @@
+package automorphiccount;
+
+import org.testng.annotations.Test;
+
+public class TestAutomorphicNumber {
+  @Test
+  public void f() {
+  }
+}

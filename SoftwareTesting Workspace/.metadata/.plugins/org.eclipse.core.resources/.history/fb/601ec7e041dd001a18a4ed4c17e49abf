@@ -1,0 +1,18 @@
+package mocktest;
+
+import java.util.List;
+
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+import static org.mockito.Mockito.*;
+
+public class MockObject {
+
+	@Test
+	public void createMockObject() {
+		List mockedList = mock(List.class);
+		Assert.assertTrue(mockedList instanceof List<E>);
+	}
+}

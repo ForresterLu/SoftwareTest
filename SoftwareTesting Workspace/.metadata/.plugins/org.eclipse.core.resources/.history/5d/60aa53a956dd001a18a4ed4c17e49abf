@@ -1,0 +1,9 @@
+package mocktest;
+
+public class MockitoTest {
+	
+	@Test(expected = RuntimeException.class)
+	public void when_thenReturn() {
+		
+	}
+}

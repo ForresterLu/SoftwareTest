@@ -1,0 +1,9 @@
+package mock;
+
+public class MockObject {
+
+	@Test
+	public void createMockObject() {
+		
+	}
+}

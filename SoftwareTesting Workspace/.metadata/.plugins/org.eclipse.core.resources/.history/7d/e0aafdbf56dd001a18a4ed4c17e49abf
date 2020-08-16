@@ -1,0 +1,14 @@
+package mocktest;
+
+import org.junit.Test;
+import java.util.LinkedList;
+
+import static org.mockito.Mockito.*;
+
+public class MockitoTest {
+	
+	@Test(expected = RuntimeException.class)
+	public void when_thenReturn() {
+		LinkedList mockList = mock(LinkedList.class);
+	}
+}

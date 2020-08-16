@@ -1,0 +1,13 @@
+package mocktest;
+
+import java.awt.List;
+
+import org.junit.Test;
+
+public class MyTest {
+	
+	@Test
+	public void verify_behaviour() {
+		List mockedList = mock(List.class);
+	}
+}
